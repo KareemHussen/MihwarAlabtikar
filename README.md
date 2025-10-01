@@ -99,7 +99,7 @@ Tasks (tenant, Sanctum, roles enforced):
 
 A ready-to-use **Postman Collection** is provided to quickly test all APIs.
 
-👉 [Download MihwarAlabtikar.postman_collection.json](https://raw.githubusercontent.com/<your-username>/<your-repo>/main/MihwarAlabtikar.postman_collection.json)
+👉 [Download MihwarAlabtikar.postman_collection.json](https://raw.githubusercontent.com/KareemHussen/MihwarAlabtikar/main/MihwarAlabtikar.postman_collection.json)
 
 ## Testing
 
