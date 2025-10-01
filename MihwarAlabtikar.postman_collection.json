@@ -1,0 +1,1761 @@
+{
+	"info": {
+		"_postman_id": "506c8be7-9389-4a8d-a0d1-e88f8a77aada",
+		"name": "MihwarAlabtikar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27281825"
+	},
+	"item": [
+		{
+			"name": "Owner",
+			"item": [
+				{
+					"name": "Authentication",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Kareem Gewaly",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "aKareem@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "organization_name",
+											"value": "Kimo",
+											"type": "text"
+										},
+										{
+											"key": "domain_name",
+											"value": "kimoozzz",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{LOCAL_HOST}}auth/register",
+									"host": [
+										"{{LOCAL_HOST}}auth"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Kareem Gewaly",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "aKareem@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "12345678",
+													"type": "text"
+												},
+												{
+													"key": "organization_name",
+													"value": "Kimo",
+													"type": "text"
+												},
+												{
+													"key": "domain_name",
+													"value": "kimoozzz",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{LOCAL_HOST}}auth/register",
+											"host": [
+												"{{LOCAL_HOST}}auth"
+											],
+											"path": [
+												"register"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "aKareem@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{LOCAL_HOST}}auth/login",
+									"host": [
+										"{{LOCAL_HOST}}auth"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "aKareem@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{LOCAL_HOST}}auth/login",
+											"host": [
+												"{{LOCAL_HOST}}auth"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|25imADBoDIj7HbfKuhH05VrtxEqUVzfTlhIYhNkI92599845",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}auth/logout",
+									"host": [
+										"{{BASE_URL}}auth"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Logout",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}auth/logout",
+											"host": [
+												"{{BASE_URL}}auth"
+											],
+											"path": [
+												"logout"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Logout All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "9|6MGtrs2XqABExZcrbmYjSJeWUomGvAP5kmAaDwuu195304fa",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}auth/logout-all",
+									"host": [
+										"{{BASE_URL}}auth"
+									],
+									"path": [
+										"logout-all"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Logout All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}auth/logout-all",
+											"host": [
+												"{{BASE_URL}}auth"
+											],
+											"path": [
+												"logout-all"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Invitations",
+					"item": [
+						{
+							"name": "Index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|xhaY0noRvBZ0UW9lWPPT89ReP20Wok3B5yH4Mp5m8d6403c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{LOCAL_HOST}}invitation",
+									"host": [
+										"{{LOCAL_HOST}}invitation"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Index",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{LOCAL_HOST}}invitation",
+											"host": [
+												"{{LOCAL_HOST}}invitation"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|xhaY0noRvBZ0UW9lWPPT89ReP20Wok3B5yH4Mp5m8d6403c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "role",
+											"value": "Admin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "aKareem@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{LOCAL_HOST}}invitation",
+									"host": [
+										"{{LOCAL_HOST}}invitation"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Store",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "role",
+													"value": "Admin",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "aKareem@gmail.com",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{LOCAL_HOST}}invitation",
+											"host": [
+												"{{LOCAL_HOST}}invitation"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Use",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|88li2AY9k0l1uNvB5URg7drz10Jiovx1yIPjsSlhff3f24e3",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "b7e25e05-e2d7-45b6-bb7e-9590032c9307",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{LOCAL_HOST}}invitation/useInvitation",
+									"host": [
+										"{{LOCAL_HOST}}invitation"
+									],
+									"path": [
+										"useInvitation"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Use",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "token",
+													"value": "b7e25e05-e2d7-45b6-bb7e-9590032c9307",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{LOCAL_HOST}}invitation/useInvitation",
+											"host": [
+												"{{LOCAL_HOST}}invitation"
+											],
+											"path": [
+												"useInvitation"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Orgnization",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|xhaY0noRvBZ0UW9lWPPT89ReP20Wok3B5yH4Mp5m8d6403c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{LOCAL_HOST}}organization",
+									"host": [
+										"{{LOCAL_HOST}}organization"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orgnization Components",
+			"item": [
+				{
+					"name": "Authentication",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Tenant User",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "kimo@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}auth/signup",
+									"host": [
+										"{{TENANT_HOST}}auth"
+									],
+									"path": [
+										"signup"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Tenant User",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "12345678",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "kimo@gmail.com",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}auth/signup",
+											"host": [
+												"{{TENANT_HOST}}auth"
+											],
+											"path": [
+												"signup"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "aKareem@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}auth/signin",
+									"host": [
+										"{{TENANT_HOST}}auth"
+									],
+									"path": [
+										"signin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "aKareem@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}auth/signin",
+											"host": [
+												"{{TENANT_HOST}}auth"
+											],
+											"path": [
+												"signin"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|25imADBoDIj7HbfKuhH05VrtxEqUVzfTlhIYhNkI92599845",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}auth/signout",
+									"host": [
+										"{{TENANT_HOST}}auth"
+									],
+									"path": [
+										"signout"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Logout",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}auth/signout",
+											"host": [
+												"{{TENANT_HOST}}auth"
+											],
+											"path": [
+												"signout"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Logout All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "9|6MGtrs2XqABExZcrbmYjSJeWUomGvAP5kmAaDwuu195304fa",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}auth/signout-all",
+									"host": [
+										"{{TENANT_HOST}}auth"
+									],
+									"path": [
+										"signout-all"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Logout All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}auth/signout-all",
+											"host": [
+												"{{TENANT_HOST}}auth"
+											],
+											"path": [
+												"signout-all"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Project",
+					"item": [
+						{
+							"name": "Index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}project",
+									"host": [
+										"{{TENANT_HOST}}project"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Index",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}project",
+											"host": [
+												"{{TENANT_HOST}}project"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Index As Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "5|sAYl3CwhtM3Wfg7C15eeoAvmttT7PVllvj4dLi1W9599e64c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}project",
+									"host": [
+										"{{TENANT_HOST}}project"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Index As Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}project",
+											"host": [
+												"{{TENANT_HOST}}project"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}project",
+									"host": [
+										"{{TENANT_HOST}}project"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Show",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}project",
+											"host": [
+												"{{TENANT_HOST}}project"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Project 1",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Active",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tessssssssssssssssst",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2025-04-24 10:30:12 PM",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2025-04-25 11:30:12 PM",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}project",
+									"host": [
+										"{{TENANT_HOST}}project"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Store",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Project 1",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "Active",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Tessssssssssssssssst",
+													"type": "text"
+												},
+												{
+													"key": "start_date",
+													"value": "2025-04-24 10:30:12 PM",
+													"type": "text"
+												},
+												{
+													"key": "end_date",
+													"value": "2025-04-25 11:30:12 PM",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}project",
+											"host": [
+												"{{TENANT_HOST}}project"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "5|sAYl3CwhtM3Wfg7C15eeoAvmttT7PVllvj4dLi1W9599e64c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Project 1",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Active",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tessssssssssssssssst",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2025-04-24 10:30:12 PM",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2025-04-25 11:30:12 PM",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}project/2",
+									"host": [
+										"{{TENANT_HOST}}project"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Project 1",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "Active",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Tessssssssssssssssst",
+													"type": "text"
+												},
+												{
+													"key": "start_date",
+													"value": "2025-04-24 10:30:12 PM",
+													"type": "text"
+												},
+												{
+													"key": "end_date",
+													"value": "2025-04-25 11:30:12 PM",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PATCH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}project/2",
+											"host": [
+												"{{TENANT_HOST}}project"
+											],
+											"path": [
+												"2"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "5|sAYl3CwhtM3Wfg7C15eeoAvmttT7PVllvj4dLi1W9599e64c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}project/2",
+									"host": [
+										"{{TENANT_HOST}}project"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}project/2",
+											"host": [
+												"{{TENANT_HOST}}project"
+											],
+											"path": [
+												"2"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Add User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}project/add_user",
+									"host": [
+										"{{TENANT_HOST}}project"
+									],
+									"path": [
+										"add_user"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "user_id",
+													"value": "3",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}project/add_user",
+											"host": [
+												"{{TENANT_HOST}}project"
+											],
+											"path": [
+												"add_user"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}task?project_id=2",
+									"host": [
+										"{{TENANT_HOST}}task"
+									],
+									"query": [
+										{
+											"key": "project_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Index",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}task?project_id=2",
+											"host": [
+												"{{TENANT_HOST}}task"
+											],
+											"query": [
+												{
+													"key": "project_id",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Index As Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}task/index_owner",
+									"host": [
+										"{{TENANT_HOST}}task"
+									],
+									"path": [
+										"index_owner"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Index As Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}task/index_owner",
+											"host": [
+												"{{TENANT_HOST}}task"
+											],
+											"path": [
+												"index_owner"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}task",
+									"host": [
+										"{{TENANT_HOST}}task"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Show",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}task",
+											"host": [
+												"{{TENANT_HOST}}task"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Project 1",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Done",
+											"description": "Todo,In Progress,Review,Done",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "Low",
+											"description": "Low,Medium,High,Urgent",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tessssssssssssssssst",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2025-04-24 10:30:12 PM",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}task",
+									"host": [
+										"{{TENANT_HOST}}task"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Store",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Project 1",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "Done",
+													"description": "Todo,In Progress,Review,Done",
+													"type": "text"
+												},
+												{
+													"key": "priority",
+													"value": "Low",
+													"description": "Low,Medium,High,Urgent",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Tessssssssssssssssst",
+													"type": "text"
+												},
+												{
+													"key": "due_date",
+													"value": "2025-04-24 10:30:12 PM",
+													"type": "text"
+												},
+												{
+													"key": "project_id",
+													"value": "2",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}task",
+											"host": [
+												"{{TENANT_HOST}}task"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Project 1",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Done",
+											"type": "text"
+										},
+										{
+											"key": "priority",
+											"value": "Low",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tessssssssssssssssst",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2025-04-24 10:30:12 PM",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TENANT_HOST}}task/4",
+									"host": [
+										"{{TENANT_HOST}}task"
+									],
+									"path": [
+										"4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Project 1",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "Done",
+													"type": "text"
+												},
+												{
+													"key": "priority",
+													"value": "Low",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Tessssssssssssssssst",
+													"type": "text"
+												},
+												{
+													"key": "due_date",
+													"value": "2025-04-24 10:30:12 PM",
+													"type": "text"
+												},
+												{
+													"key": "project_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PATCH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{TENANT_HOST}}task/4",
+											"host": [
+												"{{TENANT_HOST}}task"
+											],
+											"path": [
+												"4"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|ZkkheY7WxvwTvFJrpd4UGrcEvTXF0yPXXFhP5ug6666b41ea",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{TENANT_HOST}}task/2",
+									"host": [
+										"{{TENANT_HOST}}task"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{TENANT_HOST}}task/2",
+											"host": [
+												"{{TENANT_HOST}}task"
+											],
+											"path": [
+												"2"
+											]
+										}
+									},
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "LOCAL_HOST",
+			"value": ""
+		},
+		{
+			"key": "TENANT_HOST",
+			"value": ""
+		}
+	]
+}

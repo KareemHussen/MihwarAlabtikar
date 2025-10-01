@@ -1,6 +1,6 @@
 ## Mihwar Alabtikar (Multi-tenant Project/Task Management API)
 
-A Laravel 11, PostgreSQL, Sanctum-powered multi-tenant API using `stancl/tenancy` with role-based access for Projects and Tasks.
+A Laravel 12, PostgreSQL, Sanctum-powered multi-tenant API using `stancl/tenancy` with role-based access for Projects and Tasks.
 
 ### Features
 - Multi-tenancy with domain-based identification (stancl/tenancy v3)
@@ -15,7 +15,7 @@ A Laravel 11, PostgreSQL, Sanctum-powered multi-tenant API using `stancl/tenancy
 - Clean architecture: Controllers delegate to Services
 
 ### Tech Stack
-- PHP 8.2+, Laravel 11
+- PHP 8.2+, Laravel 12
 - PostgreSQL 15 (Docker)
 - Sanctum, Spatie Permission, Stancl Tenancy
 - Pest for testing
@@ -94,6 +94,12 @@ Projects (tenant, Sanctum, roles enforced):
 Tasks (tenant, Sanctum, roles enforced):
 - GET/SHOW allowed for Viewer/Admin
 - POST/PUT/PATCH/DELETE allowed for Admin only
+
+## API Collection
+
+A ready-to-use **Postman Collection** is provided to quickly test all APIs.
+
+👉 [Download MihwarAlabtikar.postman_collection.json](https://raw.githubusercontent.com/<your-username>/<your-repo>/main/MihwarAlabtikar.postman_collection.json)
 
 ## Testing
 
